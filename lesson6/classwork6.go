@@ -14,6 +14,7 @@ func main() {
 	addGrade(physicsPtr, 20)
 	addGrade(chemistryPtr, 98)
 	fmt.Printf("%.2f\n", printAverageGrade(mathPtr, physicsPtr, chemistryPtr))
+	sayHello()
 }
 
 // #1
