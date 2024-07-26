@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+// var initialBalance int = 100000
 
-func sayHello() {
-	fmt.Println("Hello Ibragim!")
-	fmt.Println("Yes, I did it!")
-}
+// func addingMoney() {
+// 	var sum *int
+// 	fmt.Println("Ведите сумму пополнения: ")
+// 	fmt.Scan(&*sum)
+// 	currentBalance := initialBalance + *sum
+// 	fmt.Println(currentBalance)
+// }

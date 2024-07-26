@@ -331,22 +331,21 @@ func checkNum(num int) bool {
 // 	fmt.Println(*y)
 // }
 
-package main
+// package main
 
-func main() {
-	// var ptr *int
-	// fmt.Println(ptr)
-	// var math, physics, chemistry int
-	// mathPtr := &math
-	// physicsPtr := &physics
-	// chemistryPtr := &chemistry
+// func main() {
+// var ptr *int
+// fmt.Println(ptr)
+// var math, physics, chemistry int
+// mathPtr := &math
+// physicsPtr := &physics
+// chemistryPtr := &chemistry
 
-	// addGrade(mathPtr, 89)
-	// addGrade(physicsPtr, 20)
-	// addGrade(chemistryPtr, 98)
-	// fmt.Printf("%.2f\n", printAverageGrade(mathPtr, physicsPtr, chemistryPtr))
-	sayHello()
-}
+// addGrade(mathPtr, 89)
+// addGrade(physicsPtr, 20)
+// addGrade(chemistryPtr, 98)
+// fmt.Printf("%.2f\n", printAverageGrade(mathPtr, physicsPtr, chemistryPtr))
+// }
 
 // #1
 // func updateValue(p *int) {
@@ -400,3 +399,14 @@ func main() {
 // 	sum := *mathPtr + *physicsPtr + *chemistryPtr
 // 	return float64(sum) / 3.0
 // }
+
+package main
+
+import "fmt"
+
+func main() {
+	p := new(int)
+	fmt.Println(*p)
+	*p = 25
+	fmt.Println(*p)
+}
