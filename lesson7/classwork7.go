@@ -469,3 +469,41 @@ package main
 // 	userPointer.Age = 22
 // 	fmt.Println(user.Age)
 // }
+
+// Создайте структуру Person с полями Name и Age. Напишите функцию, которая принимает указатель на Person и увеличивает его возраст на 1.
+// import "fmt"
+
+// type Person struct {
+// 	Name string
+// 	Age  int
+// }
+
+// func main() {
+// 	a := Person{Name: "Maksim", Age: 21}
+// 	var b *Person = &a
+// 	b.Age += 1
+// 	fmt.Println(b.Age)
+// }
+
+// Создайте анонимную структуру с полями EventID, Name, Location и Date. Напишите функцию, которая принимает эту структуру и возвращает строку с описанием события, включая все его поля.
+
+import "fmt"
+
+func main() {
+	var structure = struct {
+		EventId  int
+		Name     string
+		Location string
+		Date     string
+	}{
+		EventId:  25,
+		Name:     "Айти гап",
+		Location: "Отель Шератон",
+		Date:     "12.04.2024",
+	}
+	fmt.Println(structure)
+}
+
+// func Structure(event structure) {
+
+// }
