@@ -1,6 +1,6 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
 // func main() {
 // definition()
@@ -165,12 +165,12 @@ func main() {
 
 // Структуры
 
-type User struct {
-	Name     string
-	Age      int
-	Password string
-	Score    []int
-}
+// type User struct {
+// 	Name     string
+// 	Age      int
+// 	Password string
+// 	Score    []int
+// }
 
 // func (u User) isElder() bool {
 // 	a := u.Age
@@ -195,27 +195,27 @@ type User struct {
 // 	return highScore
 // }
 
-func (u User) GetTheHighestScore() int {
-	highScore := 0
-	for _, value := range u.Score {
-		if highScore < value {
-			highScore = value
-		}
-	}
-	return highScore
-}
+// func (u User) GetTheHighestScore() int {
+// 	highScore := 0
+// 	for _, value := range u.Score {
+// 		if highScore < value {
+// 			highScore = value
+// 		}
+// 	}
+// 	return highScore
+// }
 
-func main() {
-	user := User{"John", 18, "Tojikiston ba Pesh!", []int{1000, 67, 100, 10, 299}}
-	// fmt.Println(user.getHighScore())
-	fmt.Println(user.GetTheHighestScore())
-	// fmt.Println(user.isElder())
-	// if user.isElder() {
-	// 	fmt.Println("Заходи!")
-	// } else {
-	// 	fmt.Println("Упс, вход запрещён!")
-	// }
-}
+// func main() {
+// user := User{"John", 18, "Tojikiston ba Pesh!", []int{1000, 67, 100, 10, 299}}
+// fmt.Println(user.getHighScore())
+// fmt.Println(user.GetTheHighestScore())
+// fmt.Println(user.isElder())
+// if user.isElder() {
+// 	fmt.Println("Заходи!")
+// } else {
+// 	fmt.Println("Упс, вход запрещён!")
+// }
+// }
 
 // func (u User) CheckAge() bool {
 // 	age := u.Age
