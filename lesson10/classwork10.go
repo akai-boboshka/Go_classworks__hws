@@ -234,3 +234,22 @@ func main() {
 // 	user := User{"Ibragim", 18, "Ibragim1234"}
 // 	fmt.Println(user.CheckAge())
 // }
+
+package main
+
+import "fmt"
+
+func f() func() int {
+	var num int = 10
+	return func() int {
+		num++
+		return num * num
+	}
+}
+
+func main() {
+	result := f()
+	fmt.Println(result())
+	fmt.Println(result())
+	fmt.Println(result())
+}
